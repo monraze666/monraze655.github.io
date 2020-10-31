@@ -1,0 +1,60 @@
+*{
+     padding:0;
+     margin:0;
+     -webkit-box-sizing:border-box;
+     box-sizing:border-box;
+     -moz-box-sizing:border-box;
+}
+body{
+	 background-color:#eee;
+	 position:relative;
+	 top:10px;
+}
+.main {
+	 background-color:#fff;
+	 display:flex;
+	 width:95%;
+	 height:600px; 
+	 max-width:760px;
+	 margin:auto;
+	 box-shadow:0 0 10px 1px rgba(0,0,0,0.3);
+	 flex-wrap:wrap;
+
+}
+.galeri_albom{
+	 font-family:Roboto;
+	 text-align:center;
+	 padding-left:3px; 
+	 padding-right:3px;
+	 width:134px; 
+	 border: 1px solid blue;
+	 font-size:17px; 
+	 display:flex;
+	 position:relative;
+	 left:600px; 
+	 top:37px;
+}
+.galeri{
+	 position:relative;
+	 right:3px; 
+	 color:blue;
+	 border:none;
+	 background:blue;
+
+}
+.albom{
+	 position:relative;
+	 left:4px; 
+     color:black;
+}	
+.galeri:hover > .albom {
+     background:blue; 
+     color:blue;	
+} 
+.galeri:hover {
+	 background:white;
+}
+a{
+	 text-decoration:none;
+	 color:black;
+}

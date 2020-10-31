@@ -1,0 +1,122 @@
+*{
+     padding:0;
+     margin:0;
+     -webkit-box-sizing:border-box;
+     box-sizing:border-box;
+     -moz-box-sizing:border-box;
+}
+body{
+	 background-color:#eee;
+	 position:relative;
+	 top:10px;
+	 background:#47916e;
+}
+.main {
+	 background-color:#fff;
+	 display:flex;
+	 width:95%;
+	 height:700px; 
+	 max-width:760px;
+	 margin:auto;
+	 box-shadow:0 0 10px 1px rgba(0,0,0,0.3);
+	 flex-wrap:wrap;
+
+}
+.video{
+     margin:8px;
+	 position:relative;
+	 top:100px;
+     left:38px;
+}
+.text{	
+     font-family:Roboto;
+	 font-size:25px; 
+	 left:20px; 
+	 margin-left:20px;
+}
+.text_1{
+	 position:relative;
+	 top:60px;
+}
+.text_2{
+     position:relative;
+     top:350px; 
+}
+.container{
+	 position:relative;
+	 top:30px;
+
+}
+.video_2{
+	 position:relative;
+	 top:150px;
+	 opacity:0.8;
+     transition:0.4s;
+}
+.video_1{
+	 position:relative;
+	 opacity:0.8;
+	 transition:0.4s;
+	 filter:scale(1.1);
+}
+.galeri_albom{
+	 font-family:Roboto;
+	 text-align:center;
+	 padding-left:3px; 
+	 padding-right:3px;
+	 width:134px; 
+	 border: 1px solid blue;
+	 font-size:17px; 
+	 display:flex;
+	 position:relative;
+	 left:600px; 
+	 top:37px;
+}
+.galeri{
+	 position:relative;
+	 right:3px; 
+	 color:blue;
+	 border:none;
+
+}
+.albom{
+	 position:relative;
+	 left:4px; 
+     background:blue; 
+     color:black;
+}	
+.albom:hover > .galeri {
+     background:blue; 
+     color:blue;	
+} 
+.albom:hover {
+	 background:white;
+}
+a{
+	 text-decoration:none;
+	 color:black;
+}
+.video_2:hover {
+	 opacity:1;
+     transform: scale(0.97);
+}
+.video_1:hover {
+	 opacity:1;
+     transform: scale(1.11);
+     z-index: 100;
+     filter: sepia(0);
+}
+@media all and (max-width: 768px) {
+	 .video {
+	 	 max-height: initial;
+	 	 width: 95vw;
+	 	 height:calc(95vw / 16 * 9);
+	 }
+}
+@media all and (max-width: 768px) {
+	 .galeri_albom {
+	 	 max-height: initial;
+	 	 width: 95vw;
+	 	 height:calc(95vw / 16 * 9);
+	 }
+}
